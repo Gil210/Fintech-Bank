@@ -17,7 +17,7 @@ const createBVN = async (req, res) => {
   if (!bvnRegex.test(String(bvn))) {
   return res.status(400).json({
     status: 'fail',
-    message: 'Invalid BVN format. BVN must be exactly 11 digits.'
+    message: 'Invalid BVN format. BVN must be exactly 11 digit.'
   });
 }
 
